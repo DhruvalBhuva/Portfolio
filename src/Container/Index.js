@@ -65,7 +65,10 @@ const Index = () => {
       setIsLoading(false);
       return;
     } else {
-      const res = await axios.post("https://dhruval-portfolio-server.herokuapp.com/contactMe", userData);
+      const res = await axios.post(
+        "https://dhruval-portfolio-server.herokuapp.com/contactMe",
+        userData
+      );
       if (res.status === 200) {
         message.info("Mail send Successfully, I'll contact you soon");
         setUserData({
@@ -393,7 +396,7 @@ const Index = () => {
               <div className="about__button">
                 <a
                   download=""
-                  href="https://drive.google.com/file/d/1H8nzost2S_9iKPV4OdQKElalum2yULje/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1rPuWrscI02gzWuC8sC9DN3j5QIs-6PWt/view?usp=sharing"
                   className="button button-flex"
                 >
                   Download Resume
@@ -817,13 +820,13 @@ const Index = () => {
                         they can like events, authorized person can share and
                         delete memories. This platform is build using MERN stack
                       </p>
-                      <a
+                      {/* <a
                         href="#"
                         className="button button-flex button-small portfolio__button"
                       >
                         Demo
                         <AiOutlineArrowRight className="button__icon" />
-                      </a>
+                      </a> */}
                     </div>
                   </h3>
                 </div>
@@ -848,13 +851,13 @@ const Index = () => {
                         the platform is build using HTML, CSS, JS and backend is
                         build using PHP, MySql
                       </p>
-                      <a
+                      {/* <a
                         href="#"
                         className="button button-flex button-small portfolio__button"
                       >
                         Demo
                         <AiOutlineArrowRight className="button__icon" />
-                      </a>
+                      </a> */}
                     </div>
                   </h3>
                 </div>
@@ -879,13 +882,13 @@ const Index = () => {
                         platform is build using HBS, JS, CSS, and backend work
                         using Node.js Express, MongoDb.
                       </p>
-                      <a
+                      {/* <a
                         href="#"
                         className="button button-flex button-small portfolio__button"
                       >
                         Demo
                         <AiOutlineArrowRight className="button__icon" />
-                      </a>
+                      </a> */}
                     </div>
                   </h3>
                 </div>
@@ -949,7 +952,10 @@ const Index = () => {
                     </li>
                     <li className="services__model-service">
                       <AiOutlineDoubleRight className="services__model-icon" />
-                      <p>I posotion your company brand</p>
+                      <p>
+                        We are constantly updating ourselves to serve the latest
+                        technology introduced to the web development.
+                      </p>
                     </li>
                   </ul>
                 </div>
@@ -1362,28 +1368,28 @@ const Index = () => {
             </ul>
             <div className="footer__socials">
               <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                className="footer__social"
-                rel="noreferrer"
-              >
-                <BsSkype />
-              </a>
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                className="footer__social"
-                rel="noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-              <a
-                href="https://www.twitter.com/"
+                href="https://www.linkedin.com/in/dhruval-bhuva-54289416a/"
                 target="_blank"
                 className="footer__social"
                 rel="noreferrer"
               >
                 <AiFillLinkedin />
+              </a>
+              <a
+                href="https://www.instagram.com/the_dhruval.bhuva/"
+                className="footer__social"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiFillInstagram />
+              </a>
+              <a
+                href="https://github.com/DhruvalBhuva"
+                className="footer__social"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiOutlineGithub />
               </a>
             </div>
           </div>
