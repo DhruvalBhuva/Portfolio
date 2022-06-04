@@ -65,7 +65,7 @@ const Index = () => {
       setIsLoading(false);
       return;
     } else {
-      const res = await axios.post("http://localhost:7000/contactMe", userData);
+      const res = await axios.post("https://dhruval-portfolio-server.herokuapp.com/contactMe", userData);
       if (res.status === 200) {
         message.info("Mail send Successfully, I'll contact you soon");
         setUserData({
